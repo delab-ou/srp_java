@@ -1,0 +1,21 @@
+{
+	"setting":{"port":"10000","frag":"1000","repeat":"1000","initseq":"1"},
+	"sig":[
+		{"id":"1","name":"mcl","type":"bls12_381","keys":"mcl_bls12_381.keys"},
+		{"id":"2","name":"mcl","type":"bn254","keys":"bn254.keys"},
+		{"id":"999","name":"none","type":"none","keys":"none"}
+	],
+	"protocolsetting":[
+		{"id":"101","name":"ISDSR","sig":"1"},
+		{"id":"102","name":"ISDSR","sig":"2"},
+		
+		{"id":"201","name":"SRDP","sig":"1"},
+		{"id":"202","name":"SRDP","sig":"2"},
+		
+		{"id":"301","name":"SRP","sig":"1"},
+		{"id":"302","name":"SRP","sig":"2"},
+		
+		{"id":"601","name":"DSR","sig":"999"}
+
+	]
+}
