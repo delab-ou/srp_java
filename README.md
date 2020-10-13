@@ -23,7 +23,8 @@ Then we execute route establishment processes of the target secure routing proto
 
 export LD_LIBRARY_PATH=(a directory including the mcl library)
 
-java -cp ./mcl.jar:gson-2.8.6.jar:./bin ou.ist.de.protocol.Main -dest:10.0.0.4 -config-protoid:101 -default-setting:on
+java -cp ./mcl.jar:./gson-2.8.6.jar:./bin ou.ist.de.protocol.Main -dest:10.0.0.4 -config-protoid:101 -default-setting:on
 
 The value of "-config-protoid" is described in the file "config.txt".
+
 "101" means using isdsr with bn254 elliptic curves' parameters in the mcl library.
