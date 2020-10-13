@@ -35,6 +35,8 @@ public abstract class PacketManager {
     public abstract Packet generateInitialReplyPacket(Packet p);
     public abstract Packet generateForwardingRequestPacket(Packet p,InetAddress sndr);
     public abstract Packet generateForwardingReplyPacket(Packet p, InetAddress sndr);
+    public Packet generateInitialErrorPacket() {return null;}
+    public Packet generateForwardingErrorPacket() {return null;}
 
     public ArrayList<DatagramPacket> fragment(Packet p){
         byte[] bo=p.option.toBytes();
