@@ -13,10 +13,17 @@ This means the python script generates an envirnment which include 8 nodes and n
 Then the script runs Mininet-wifi and generate a file "cmd.txt".
 
 After running Mininet-wifi, we execute a command
+
 mininet-wifi>source cmd.txt 
+
 mininet-wifi>xterm sta1
 
 In the console of the sta1, first, we set an environment value for the mcl library.
 Then we execute route establishment processes of the target secure routing protocol.
+
 export LD_LIBRARY_PATH=(a directory including the mcl library)
+
 java -cp ./mcl.jar:gson-2.8.6.jar:./bin ou.ist.de.protocol.Main -dest:10.0.0.4 -config-protoid:101 -default-setting:on
+
+The value of "-config-protoid" is described in the file "config.txt".
+"101" means using isdsr with bn254 elliptic curves' parameters in the mcl library.
