@@ -1,0 +1,3 @@
+py sta2.cmd("xterm -n sta2 -hold -e bash isdsr_mcl_bn254.sh &")
+py sta3.cmd("xterm -n sta3 -hold -e bash isdsr_mcl_bn254.sh &")
+py sta4.cmd("xterm -n sta4 -hold -e bash isdsr_mcl_bn254.sh &")

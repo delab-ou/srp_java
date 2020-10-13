@@ -6,7 +6,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/hal/workspace/git_workspace/srp/gson-2.8.6.jar"/>
-	<classpathentry kind="lib" path="/Users/hal/workspace/git_workspace/srp/mcl.jar"/>
+	<classpathentry kind="lib" path="/home/hal/workspace/srp_java/gson-2.8.6.jar"/>
+	<classpathentry kind="lib" path="/home/hal/workspace/srp_java/mcl.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

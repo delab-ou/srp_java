@@ -8,7 +8,6 @@ import ou.ist.de.protocol.node.Node;
 import ou.ist.de.protocol.packet.PacketManager;
 import ou.ist.de.protocol.routing.PacketManagerFactory;
 import ou.ist.de.protocol.routing.ProtocolType;
-import ou.ist.de.protocol.routing.dsr.DSRPacketManager;
 import ou.ist.de.protocol.utils.RuntimeArgs;
 
 public class Main {

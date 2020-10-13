@@ -20,19 +20,21 @@ public class ISDSRSignatureManager extends SecureRoutingSignatureManager {
 
     protected String uid;
     protected ISDSRKeys key;
+    /*
     static {
         String lib = "mcljava";
         String libName = System.mapLibraryName(lib);
         System.out.println("libName : " + libName);
         System.loadLibrary(lib);
 	}
+	*/
     public ISDSRSignatureManager() {
         super(Mcl.BN254);
     }
     public ISDSRSignatureManager(int curveType) {
         super(curveType);
         this.setup();
-        this.keyDerivation();
+        //this.keyDerivation();
     }
 
     public void setup() {
@@ -51,7 +53,7 @@ public class ISDSRSignatureManager extends SecureRoutingSignatureManager {
     }
 
     public void keyDerivation() {
-        // System.out.println("key derivation uid=" + uid);
+        System.out.println("key derivation uid=" + uid);
         key.isk1=H1(uid);
         key.isk2=H2(uid);
 
@@ -176,6 +178,7 @@ public class ISDSRSignatureManager extends SecureRoutingSignatureManager {
 
 	protected G1 H1(String str) {
 		G1 ret = new G1();
+		System.out.println("str="+str);
 		Mcl.hashAndMapToG1(ret, str.getBytes());
 		return ret;
 
